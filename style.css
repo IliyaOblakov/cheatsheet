@@ -1,0 +1,62 @@
+/* --- Google Fonts --- */
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
+
+/* --- Components design --- */
+/*@import url("components/avatar.css");*/
+/*@import url("components/button.css");*/
+/*@import url("components/dropdown.css");*/
+/*@import url("components/card.css");*/
+/*@import url("components/badge.css");*/
+/*@import url("components/banner.css");*/
+/*@import url("components/tabs.css");*/
+/*@import url("components/list.css");*/
+
+/* --- Fonts --- */
+body { font-family: "Open Sans", "Helvetica", "sans-serif"; padding-bottom:
+  200px;}
+ h1, h2, h3 { font-family: "Montserrat", "sans-serif"; }
+body {
+  background-color:#ececec ;
+  margin: 0, auto;
+}
+
+h4 {
+  color: #ad1401;
+}
+
+h2{
+  color: #ad1401;
+}
+
+#reduce {
+  border: 3px solid #c4d4e6;
+  margin: 3em ;
+  border-radius: 2%;
+  background-color: rgb(225, 225, 245);
+  box-shadow: 4px 6px #c4d4e6;
+
+}
+
+#inject{
+  border: 3px solid #c4d4e6;
+  margin: 3em ;
+  border-radius: 2%;
+  background-color: rgb(225, 225, 245);
+  box-shadow: 4px 6px #c4d4e6;
+}
+ span {
+   color: rgb(114, 108, 108);
+ }
+#title {
+  margin-left: 50%;
+  font-size: large;
+  color: rgb(231, 31, 31);
+  margin-top: 5em;
+  background-color: rgb(225, 225, 245);
+  height: 30px;
+  width: 200px;
+  text-align: center;
+  border: 3px solid #c4d4e6;
+  border-radius: 8%;
+  box-shadow: 3px 3px #c4d4e6;
+}

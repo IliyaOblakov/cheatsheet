@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UI components sprint</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div id="title"> Ruby Methods!!!</div>
+    <div id="reduce">
+       <ul>
+       <P> <li><H2>reduce()</H2> </li> <li><H3>What is a reducer</H3></li><br>
+          The term comes from the world of functional programming, and it's often paired with map. You've probably heard the term map/reduce if you've been in the programming world for more than a few months.
+          I won't be talking about map much in this post because I've already done so in "How to Use the Ruby Map Method". Go read about it there if you want to learn more.
+          But Ruby is not a functional language you might say, and you would be right. But, Ruby does let you write programs in the functional style through the use of blocks, procs, and lambdas.
+          Outside of programming, a reducer is defined like this (taken from Wikipedia).
+          A reducer is the component in a pipeline that reduces the pipe size from a larger to a smaller bore (inner diameter). <br><hr>
+          But in the programming world, it means reducing a list down to a single value by combining things.
+          Ruby reduce
+          In Ruby, the reducer is a method called reduce.
+          A popular requirement is to reduce a list of numbers into a single value by adding them together (aka. performing a sum operation).
+          You can pass the reduce method a starting value (i.e. 0 in the example below), and a block.
+          <H4>[1, 2, 3].reduce(0) { |sum, n| sum + n }</H4><span> # => 6 <br></span><br>
+          The way that works is, for each element of the array, the block gets two arguments. The first argument is the accumulator, the second is the current element. Another way to think about the accumulator is to think about it as a running total.
+          You can specify the accumulator starting value by passing it as the first argument to reduce. In the example above, the accumulator starts from 0. So let's zoom in a little on how that works.
+          The first time reduce is executed, sum is 0.
+          <H4>0 + 1</H4><span> # => 1 <br></span><br>
+          Now, the next time it runs, the accumulator has a different value (i.e. 1), which it got from the previous iteration.
+          <H4>1 + 2 </H4><span></H4># => 3 <br></span><br>
+          And finally, the last time it runs, the value of the accumulator is 3.
+          <H4>3 + 3 </H4><span> # => 6 <br></span><br>
+          So the last value of the accumulator is 6, which is also the value returned by the reduce method.
+          Also worth noting is the fact that if you don't specify an initial value for the accumulator, it defaults to the first elemen of the collection.
+        </P>
+        </ul>
+      </div>
+
+     <div id="inject"> <ul>
+        <li><H1>inject()</H1></li>
+        <li><H3>Ruby inject</H3></li><br>
+        <p>The inject method is nothing more than an alias for reduce. So you can use it exactly as you would use the reduce method.<hr> <H4>[1, 2, 3].inject(0) { |sum, n| sum + n } # => 6</H4></p><br>
+        <p><ul>
+          <li><H4>[1, 2, 3].sum</H4> <span> # => 6</span></li>
+          <li><H4>[1, 2, 3].min </H4><span># => 1</span></li>
+          <li><H4>[1, 2, 3].max </H4><span> # => 2</span></li>
+          <li><H4>[1, 2, 3].count </H4><span># => 3</span></li>
+        </ul></p><br>
+
+      </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script  src="https://ajax.googleapis.com/ajax/libs/jquary/1.11.1/jquary.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+  </body>
+ </html>
